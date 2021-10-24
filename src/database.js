@@ -2885,7 +2885,6 @@ export const get_topics=()=>{
 export const get_questions=()=>{
        var data=get_data(),res=new Array();
        for(var obj of data){
-           console.log(obj['questions']);
            res.push(...obj['questions']);
        }
        return res;
